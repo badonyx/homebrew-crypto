@@ -1,4 +1,4 @@
-cask "hiro-wallet" do
+cask "leather" do
   version "4.10.1"
   sha256 "0ed51289872b97e39e8f1e934f67353cd7e9e0b92500f336e3114065860d2594"
 
