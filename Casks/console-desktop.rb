@@ -8,6 +8,7 @@ cask "console-desktop" do
   homepage "https://www.console.xyz/"
 
   livecheck do
+    # strategy :extract_plist
     skip "No version information available"
   end
 
