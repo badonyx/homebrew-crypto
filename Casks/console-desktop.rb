@@ -1,5 +1,5 @@
 cask "console-desktop" do
-  version :latest
+  version "0.1.24"
   sha256 :no_check
 
   url "https://download.console.xyz/mac/Console.dmg"
@@ -8,8 +8,7 @@ cask "console-desktop" do
   homepage "https://www.console.xyz/"
 
   livecheck do
-    # strategy :extract_plist
-    skip "No version information available"
+    strategy :extract_plist
   end
 
   app "Console.app", target: "Console Desktop.app"

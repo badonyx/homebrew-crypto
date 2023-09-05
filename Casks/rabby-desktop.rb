@@ -1,7 +1,7 @@
 cask "rabby-desktop" do
   arch arm: "arm64", intel: "x64"
 
-  version :latest
+  version "0.33.0"
   sha256 :no_check
 
   url "https://download.rabby.io/wallet-desktop/darwin-#{arch}/rabby-wallet-desktop-installer-#{arch}-latest.dmg"
@@ -10,8 +10,7 @@ cask "rabby-desktop" do
   homepage "https://rabby.io/"
 
   livecheck do
-    # strategy :extract_plist
-    skip "No version information available"
+    strategy :extract_plist
   end
 
   app "Rabby Desktop.app"
