@@ -1,6 +1,6 @@
 cask "blockstream-green" do
-  version "1.2.6"
-  sha256 "9110ba0f1490a3baedbaaaec9c4a7bf8f511bb9c1f2f81655e6be6ee1c71b40b"
+  version "1.2.7"
+  sha256 "692496addde67c052d1db051498c261dc4528ffc4c9e5de35629d645182d7171"
 
   url "https://github.com/Blockstream/green_qt/releases/download/release_#{version}/BlockstreamGreen_MacOS_x86_64.zip",
       verified: "github.com/Blockstream/green_qt/"
