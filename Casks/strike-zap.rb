@@ -1,4 +1,4 @@
-cask "zap" do
+cask "strike-zap" do
   version "0.7.7-beta"
   sha256 "224a0fb5d731fab9a8e62510b2fa1f0672c63bd41f279f5d731a7942b6447b68"
 
