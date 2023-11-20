@@ -1,12 +1,8 @@
 cask "bitcoin-knots" do
-  arch intel: "x86_64",
-       arm:   "arm64"
-
   version "23.0.knots20220529"
-  sha256 intel: "c3fbda586536bfc9d9053b04fe51f6f40b98b56f6388380bd1384b258debd470",
-         arm:   "8ec07b672dbbf2c495962d6b484a6af608627adeb2435ab87b46546e815826a1"
+  sha256 "c3fbda586536bfc9d9053b04fe51f6f40b98b56f6388380bd1384b258debd470"
 
-  url "https://github.com/bitcoinknots/bitcoin/releases/download/v#{version}/bitcoin-#{version}-#{arch}-apple-darwin-unsigned.dmg",
+  url "https://github.com/bitcoinknots/bitcoin/releases/download/v#{version}/bitcoin-#{version}-x86_64-apple-darwin-unsigned.dmg",
       verified: "github.com/bitcoinknots/bitcoin/"
   name "Bitcoin Knots"
   desc "Enhanced Bitcoin node/wallet software"
@@ -27,17 +23,17 @@ cask "bitcoin-knots" do
                    args: ["-rd", "com.apple.quarantine", "#{staged_path}/Bitcoin-Qt.app"]
   end
 
-  zap trash: [
-    # "~/Library/Preferences/org.bitcoin.Bitcoin-Qt.plist",
-  ]
+  # Shared config?
+  # zap trash: [
+  #   "~/Library/Preferences/org.bitcoin.Bitcoin-Qt.plist",
+  # ]
 
-  caveats <<~EOS
-    This app is not signed with an Apple Developer certificate. Therefore in order
-    to run it may be necessary to override the macOS security policy. This can be
-    done with homebrew using the `--no-quarantine` option:
-
-      brew reinstall --cask --no-quarantine #{token}
-
-    This app may not run even with this mitigation.
-  EOS
+  caveats do
+    requires_rosetta
+    <<~EOS
+      The Apple Silicon build for this cask is not functional so the Intel build is
+      required instead.
+        https://github.com/orgs/Homebrew/discussions/3088#discussioncomment-7623916
+    EOS
+  end
 end
