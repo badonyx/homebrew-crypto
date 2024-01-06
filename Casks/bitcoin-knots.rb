@@ -1,6 +1,6 @@
 cask "bitcoin-knots" do
-  version "23.0.knots20220529"
-  sha256 "c3fbda586536bfc9d9053b04fe51f6f40b98b56f6388380bd1384b258debd470"
+  version "25.1.knots20231115"
+  sha256 "cf170308f437f12513fad73acbaf48c329a2eaac0f4b2ff62838920b4baeb143"
 
   url "https://github.com/bitcoinknots/bitcoin/releases/download/v#{version}/bitcoin-#{version}-x86_64-apple-darwin-unsigned.dmg",
       verified: "github.com/bitcoinknots/bitcoin/"
@@ -31,7 +31,7 @@ cask "bitcoin-knots" do
   caveats do
     requires_rosetta
     <<~EOS
-      The Apple Silicon build for this cask is not functional so the Intel build is
+      The Apple Silicon build for this cask is unsigned so the Intel build is
       required instead.
         https://github.com/orgs/Homebrew/discussions/3088#discussioncomment-7623916
     EOS
