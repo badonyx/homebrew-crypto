@@ -1,9 +1,9 @@
 cask "atani" do
   arch arm: "-arm64"
 
-  version "14.37.0"
-  sha256 arm:   "0092b54c7c6578fbefe267c6d986343c718dc758a6aa7e696ee94a5f2c9a2ecf",
-         intel: "442a1008ee710ef19f693359995ed65c6adfd7fd5bd71003a8c5cfa8d2b67149"
+  version "14.39.0"
+  sha256 arm:   "3d03f3683230d232e7a36cd7115310d50a8f8d98a7594dc17e6d889a7a6df4e9",
+         intel: "c25e66874a3ee16ce7b09a2abdee89b00599c6609ee91109a13b72be81679828"
 
   url "https://cdn.atani.com/desktop/releases/Atani-#{version}#{arch}.dmg"
   name "Atani"
