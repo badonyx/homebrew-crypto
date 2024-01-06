@@ -1,5 +1,5 @@
 cask "console-desktop" do
-  version "0.1.26"
+  version "0.1.34"
   sha256 :no_check
 
   url "https://download.console.xyz/mac/Console.dmg"
