@@ -21,8 +21,8 @@ cask "atani" do
   app "Atani.app"
 
   zap trash: [
-    "~/Library/Application Support/Caches/atani-updater",
     "~/Library/Application Support/Atani",
+    "~/Library/Application Support/Caches/atani-updater",
     "~/Library/Caches/com.atani.desktop",
     "~/Library/Caches/com.atani.desktop.ShipIt",
     "~/Library/Logs/Atani",
