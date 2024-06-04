@@ -1,7 +1,7 @@
 cask "rabby-desktop" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.36.4"
+  version "0.38.2"
   sha256 :no_check
 
   url "https://download.rabby.io/wallet-desktop/darwin-#{arch}/rabby-wallet-desktop-installer-#{arch}-latest.dmg"
