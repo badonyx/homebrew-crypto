@@ -1,6 +1,6 @@
 cask "leather" do
-  version "4.14.3"
-  sha256 "6d2aa7d6b98aef262e05a469e9080f43f780849ad9b18b9143bf14799a19738b"
+  version "4.15.1"
+  sha256 "9e6c39294f3a6c58a6cc437e9674845b1573943a40738973c6e8c48ff5d7bc91"
 
   url "https://github.com/leather-wallet/desktop/releases/download/v#{version}/leather-wallet.mainnet.v#{version}.dmg",
       verified: "github.com/leather-wallet/desktop/"
