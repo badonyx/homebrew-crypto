@@ -1,11 +1,12 @@
 cask "exodus" do
   arch arm: "macos-arm64", intel: "macos"
 
-  version "23.7.17"
-  sha256 arm:   "70987e976ec5fc84c610b47e77b592d09d5d8e395790879afabc2166d8bec1d2",
-         intel: "949978cc71e3718c7f8034b8bbe9c3851dcbfb0f86d52ea6f00190f12ca64bdf"
+  version "24.23.3"
+  sha256 arm:   "136cf2625517aa56953d76c51800c34c4c8c7697b002f5aa25af1b758277cb95",
+         intel: "d4a427766ab0e91085d4ae6af5a8e3adaa2317169f0edec4d6e7b0c348720db6"
 
-  url "https://downloads.exodus.com/releases/exodus-#{arch}-#{version}.dmg"
+  url "https://downloads.exodus.com/releases/exodus-#{arch}-#{version}.dmg",
+      user_agent: :fake
   name "Exodus"
   desc "Desktop wallet for cryptocurrency assets"
   homepage "https://www.exodus.com/"
@@ -25,8 +26,4 @@ cask "exodus" do
     "~/Library/Preferences/com.electron.exodus.plist",
     "~/Library/Saved Application State/com.electron.exodus.savedState",
   ]
-
-  caveats <<~EOS
-    Cask may be broken, see https://github.com/Homebrew/homebrew-cask/pull/152673
-  EOS
 end
