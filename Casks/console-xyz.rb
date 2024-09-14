@@ -1,4 +1,4 @@
-cask "console-desktop" do
+cask "console-xyz" do
   version "0.3.4"
   sha256 :no_check
 
@@ -11,11 +11,16 @@ cask "console-desktop" do
     strategy :extract_plist
   end
 
-  app "Console.app", target: "Console Desktop.app"
+  app "Console.app", target: "Console XYZ.app"
 
   zap trash: [
     "~/Library/Application Support/Console",
+    "~/Library/Logs/Console",
     "~/Library/Preferences/com.electron.console.plist",
     "~/Library/Saved Application State/com.electron.console.savedState/",
   ]
+
+  caveats do
+    requires_rosetta
+  end
 end
