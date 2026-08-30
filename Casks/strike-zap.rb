@@ -14,6 +14,8 @@ cask "strike-zap" do
     regex(/v?(\d+(?:\.\d+)+(?:-\w+))/i)
   end
 
+  deprecate! date: "2023-11-17", because: :discontinued
+
   depends_on :macos
 
   app "Zap.app"
