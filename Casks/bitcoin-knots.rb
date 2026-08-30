@@ -11,7 +11,7 @@ cask "bitcoin-knots" do
   desc "Enhanced Bitcoin node/wallet software"
   homepage "https://bitcoinknots.org/"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   # Renamed for consistency: app name is different in the Finder and in a shell.
   app "Bitcoin-Qt.app", target: "Bitcoin Knots.app"
