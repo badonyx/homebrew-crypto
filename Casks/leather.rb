@@ -13,6 +13,8 @@ cask "leather" do
     strategy :github_latest
   end
 
+  deprecate! date: "2025-10-16", because: :discontinued
+
   depends_on :macos
 
   app "Leather.app"
