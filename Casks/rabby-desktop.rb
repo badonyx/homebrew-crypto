@@ -13,6 +13,8 @@ cask "rabby-desktop" do
     strategy :extract_plist
   end
 
+  depends_on :macos
+
   app "Rabby Desktop.app"
 
   zap trash: [

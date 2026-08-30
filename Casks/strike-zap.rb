@@ -14,6 +14,8 @@ cask "strike-zap" do
     regex(/v?(\d+(?:\.\d+)+(?:-\w+))/i)
   end
 
+  depends_on :macos
+
   app "Zap.app"
 
   zap trash: [

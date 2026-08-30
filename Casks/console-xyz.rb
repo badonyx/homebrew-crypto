@@ -11,6 +11,8 @@ cask "console-xyz" do
     strategy :extract_plist
   end
 
+  depends_on :macos
+
   app "Console.app", target: "Console XYZ.app"
 
   zap trash: [

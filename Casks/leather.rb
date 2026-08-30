@@ -13,6 +13,8 @@ cask "leather" do
     strategy :github_latest
   end
 
+  depends_on :macos
+
   app "Leather.app"
 
   zap trash: [
