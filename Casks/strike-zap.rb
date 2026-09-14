@@ -2,8 +2,7 @@ cask "strike-zap" do
   version "0.7.7-beta"
   sha256 "224a0fb5d731fab9a8e62510b2fa1f0672c63bd41f279f5d731a7942b6447b68"
 
-  url "https://github.com/LN-Zap/zap-desktop/releases/download/v#{version}/Zap-mac-v#{version}.dmg",
-      verified: "github.com/LN-Zap/zap-desktop/"
+  url "https://github.com/LN-Zap/zap-desktop/releases/download/v#{version}/Zap-mac-v#{version}.dmg"
   name "Zap"
   desc "Cross platform Lightning Network wallet"
   homepage "https://zaphq.io/"
