@@ -1,9 +1,9 @@
 cask "bitcoin-knots" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "29.4.knots20260508"
-  sha256 arm:   "4218c01abf01aad7086dc4a1c332c0ea3e110aacf65dc6bc7e1f35d443725acb",
-         intel: "c054aef2142be9cbb247515bb2cdc302672d7676ab81a5e91cfe8f61271534d1"
+  version "29.4.2.knots20260508"
+  sha256 arm:   "325d222cd02e2d5e678124d86adfc5f69ab3de6e278d49ba6385888ca2c99d9f",
+         intel: "225f6bfa7d674979b8cb987bb7168f7b02183d88a79b82846ebfab998f0516d9"
 
   url "https://github.com/bitcoinknots/bitcoin/releases/download/v#{version}/bitcoin-#{version}-#{arch}-apple-darwin.zip"
   name "Bitcoin Knots"
